@@ -42,11 +42,13 @@ public class Game {
                     switch (command[1]) {
                         case "easy" -> player1 = new ComputerEasy('X');
                         case "medium" -> player1 = new ComputerMedium('X');
+                        case "hard" -> player1 = new ComputerHard('X');
                         case "user" -> player1 = new User('X');
                     }
                     switch (command[2]) {
                         case "easy" -> player2 = new ComputerEasy('O');
                         case "medium" -> player2 = new ComputerMedium('O');
+                        case "hard" -> player2 = new ComputerHard('O');
                         case "user" -> player2 = new User('O');
                     }
                 }

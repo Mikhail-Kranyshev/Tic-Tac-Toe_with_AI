@@ -2,7 +2,7 @@ package tictactoe;
 
 import java.util.Random;
 
-public class ComputerMedium extends ComputerEasy{
+public class ComputerMedium extends Player{
 
     public ComputerMedium(char figure) {
         super(figure);
