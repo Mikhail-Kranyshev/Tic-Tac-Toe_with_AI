@@ -40,11 +40,13 @@ public class Game {
             if (command.length == 3) {
                 if ("start".equals(command[0])) {
                     switch (command[1]) {
-                        case "easy" -> player1 = new Computer('X');
+                        case "easy" -> player1 = new ComputerEasy('X');
+                        case "medium" -> player1 = new ComputerMedium('X');
                         case "user" -> player1 = new User('X');
                     }
                     switch (command[2]) {
-                        case "easy" -> player2 = new Computer('O');
+                        case "easy" -> player2 = new ComputerEasy('O');
+                        case "medium" -> player2 = new ComputerMedium('O');
                         case "user" -> player2 = new User('O');
                     }
                 }
